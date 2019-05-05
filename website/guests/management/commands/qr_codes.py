@@ -13,4 +13,4 @@ class Command(BaseCommand):
 
     def handle(self, *args, **kwargs):
         filename = kwargs['filename']
-        qr_codes.import_guests(filename)
+        qr_codes.create_qr_codes(filename)
