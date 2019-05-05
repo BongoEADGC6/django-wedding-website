@@ -134,12 +134,12 @@ STATICFILES_DIRS = (
 # the address your emails (save the dates/invites/etc.) will come from
 DEFAULT_WEDDING_FROM_EMAIL = 'Cliff and Melissa <mrmrshults@gmail.com>'
 # the default reply-to of your emails
-DEFAULT_WEDDING_REPLY_EMAIL = 'mrmrshults@gmail.com'
+DEFAULT_WEDDING_REPLY_EMAIL = 'Cliff and Melissa <mrmrshults@gmail.com>'
 
 # when sending test emails it will use this address
 DEFAULT_WEDDING_TEST_EMAIL = DEFAULT_WEDDING_FROM_EMAIL
 WEDDING_CC_LIST = []  # put email addresses here if you want to cc someone on all your invitations
-EMAIL_USE_TLS = os.getenv('DJANGO_EMAIL_TLS', True) 
+EMAIL_USE_TLS = os.getenv('DJANGO_EMAIL_TLS', True)
 EMAIL_HOST = os.getenv('DJANGO_EMAIL_HOST', 'smtp.gmail.com')
 EMAIL_PORT = os.getenv('DJANGO_EMAIL_PORT', 587)
 EMAIL_HOST_USER = os.getenv('DJANGO_EMAIL_USER', 'root@localhost')
