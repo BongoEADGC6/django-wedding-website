@@ -14,7 +14,8 @@ ALLOWED_TYPES = [
 
 
 def _random_uuid():
-    return uuid.uuid4().hex
+    return uuid.uuid1()
+    #return uuid.uuid4().hex
 
 
 class Party(models.Model):
