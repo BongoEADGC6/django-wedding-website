@@ -118,3 +118,4 @@ dmypy.json
 *.sqlite3
 import_data/*
 logs/*
+.DS_STORE
