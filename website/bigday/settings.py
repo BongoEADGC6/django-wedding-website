@@ -130,9 +130,9 @@ STATICFILES_DIRS = (
 
 
 # the address your emails (save the dates/invites/etc.) will come from
-DEFAULT_WEDDING_FROM_EMAIL = so.getenv('WEDDING_FROM', 'Display Name <root@localhost>')
+DEFAULT_WEDDING_FROM_EMAIL = os.getenv('WEDDING_FROM', 'Display Name <root@localhost>')
 # the default reply-to of your emails
-DEFAULT_WEDDING_REPLY_EMAIL = so.getenv('WEDDING_REPLY', 'Display Name <root@localhost>')
+DEFAULT_WEDDING_REPLY_EMAIL = os.getenv('WEDDING_REPLY', 'Display Name <root@localhost>')
 
 # when sending test emails it will use this address
 DEFAULT_WEDDING_TEST_EMAIL = DEFAULT_WEDDING_FROM_EMAIL
