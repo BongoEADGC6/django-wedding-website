@@ -1,0 +1,288 @@
+(0.001) SELECT "guests_party"."id", "guests_party"."name", "guests_party"."type", "guests_party"."category", "guests_party"."save_the_date_sent", "guests_party"."save_the_date_opened", "guests_party"."invitation_id", "guests_party"."invitation_sent", "guests_party"."invitation_opened", "guests_party"."is_invited", "guests_party"."rehearsal_dinner", "guests_party"."is_attending", "guests_party"."comments" FROM "guests_party" WHERE ("guests_party"."save_the_date_sent" IS NULL AND "guests_party"."is_invited" = 1) ORDER BY "guests_party"."category" ASC, "guests_party"."is_invited" DESC, "guests_party"."name" ASC; args=(True,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 11; args=(11,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 4; args=(4,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 3; args=(3,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 8; args=(8,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 9; args=(9,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 24; args=(24,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 10; args=(10,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 7; args=(7,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 6; args=(6,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 40; args=(40,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 2; args=(2,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 20; args=(20,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 5; args=(5,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 17; args=(17,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 15; args=(15,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 22; args=(22,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 37; args=(37,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 25; args=(25,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 23; args=(23,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 14; args=(14,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 36; args=(36,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 13; args=(13,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 27; args=(27,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 32; args=(32,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 26; args=(26,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 33; args=(33,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 41; args=(41,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 34; args=(34,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 35; args=(35,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 28; args=(28,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 19; args=(19,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 16; args=(16,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 38; args=(38,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 39; args=(39,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 42; args=(42,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 12; args=(12,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 31; args=(31,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 18; args=(18,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 29; args=(29,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 30; args=(30,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 43; args=(43,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 21; args=(21,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 44; args=(44,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 45; args=(45,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 46; args=(46,)
+(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "guests_party"."id", "guests_party"."name", "guests_party"."type", "guests_party"."category", "guests_party"."save_the_date_sent", "guests_party"."save_the_date_opened", "guests_party"."invitation_id", "guests_party"."invitation_sent", "guests_party"."invitation_opened", "guests_party"."is_invited", "guests_party"."rehearsal_dinner", "guests_party"."is_attending", "guests_party"."comments" FROM "guests_party" WHERE ("guests_party"."save_the_date_sent" IS NULL AND "guests_party"."is_invited" = 1) ORDER BY "guests_party"."category" ASC, "guests_party"."is_invited" DESC, "guests_party"."name" ASC; args=(True,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 11; args=(11,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 4; args=(4,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 3; args=(3,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 8; args=(8,)
+(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "guests_party"."id", "guests_party"."name", "guests_party"."type", "guests_party"."category", "guests_party"."save_the_date_sent", "guests_party"."save_the_date_opened", "guests_party"."invitation_id", "guests_party"."invitation_sent", "guests_party"."invitation_opened", "guests_party"."is_invited", "guests_party"."rehearsal_dinner", "guests_party"."is_attending", "guests_party"."comments" FROM "guests_party" WHERE ("guests_party"."save_the_date_sent" IS NULL AND "guests_party"."is_invited" = 1) ORDER BY "guests_party"."category" ASC, "guests_party"."is_invited" DESC, "guests_party"."name" ASC; args=(True,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 11; args=(11,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 4; args=(4,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 3; args=(3,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 8; args=(8,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 9; args=(9,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 24; args=(24,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 10; args=(10,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 7; args=(7,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 6; args=(6,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 40; args=(40,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 2; args=(2,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 20; args=(20,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 5; args=(5,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 17; args=(17,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 15; args=(15,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 22; args=(22,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 37; args=(37,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 25; args=(25,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 23; args=(23,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 14; args=(14,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 36; args=(36,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 13; args=(13,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 27; args=(27,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 32; args=(32,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 26; args=(26,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 33; args=(33,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 41; args=(41,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 34; args=(34,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 35; args=(35,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 28; args=(28,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 19; args=(19,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 16; args=(16,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 38; args=(38,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 39; args=(39,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 42; args=(42,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 12; args=(12,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 31; args=(31,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 18; args=(18,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 29; args=(29,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 30; args=(30,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 43; args=(43,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 21; args=(21,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 44; args=(44,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 45; args=(45,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 46; args=(46,)
+(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "guests_party"."id", "guests_party"."name", "guests_party"."type", "guests_party"."category", "guests_party"."save_the_date_sent", "guests_party"."save_the_date_opened", "guests_party"."invitation_id", "guests_party"."invitation_sent", "guests_party"."invitation_opened", "guests_party"."is_invited", "guests_party"."rehearsal_dinner", "guests_party"."is_attending", "guests_party"."comments" FROM "guests_party" WHERE ("guests_party"."save_the_date_sent" IS NULL AND "guests_party"."is_invited" = 1) ORDER BY "guests_party"."category" ASC, "guests_party"."is_invited" DESC, "guests_party"."name" ASC; args=(True,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 11; args=(11,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 4; args=(4,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 3; args=(3,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 8; args=(8,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 9; args=(9,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 24; args=(24,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 10; args=(10,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 7; args=(7,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 6; args=(6,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 40; args=(40,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 2; args=(2,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 20; args=(20,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 5; args=(5,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 17; args=(17,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 15; args=(15,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 22; args=(22,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 37; args=(37,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 25; args=(25,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 23; args=(23,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 14; args=(14,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 36; args=(36,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 13; args=(13,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 27; args=(27,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 32; args=(32,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 26; args=(26,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 33; args=(33,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 41; args=(41,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 34; args=(34,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 35; args=(35,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 28; args=(28,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 19; args=(19,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 16; args=(16,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 38; args=(38,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 39; args=(39,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 42; args=(42,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 12; args=(12,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 31; args=(31,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 18; args=(18,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 29; args=(29,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 30; args=(30,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 43; args=(43,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 21; args=(21,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 44; args=(44,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 45; args=(45,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 46; args=(46,)
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "guests_party"."id", "guests_party"."name", "guests_party"."type", "guests_party"."category", "guests_party"."save_the_date_sent", "guests_party"."save_the_date_opened", "guests_party"."invitation_id", "guests_party"."invitation_sent", "guests_party"."invitation_opened", "guests_party"."is_invited", "guests_party"."rehearsal_dinner", "guests_party"."is_attending", "guests_party"."comments" FROM "guests_party" WHERE ("guests_party"."save_the_date_sent" IS NULL AND "guests_party"."is_invited" = 1) ORDER BY "guests_party"."category" ASC, "guests_party"."is_invited" DESC, "guests_party"."name" ASC; args=(True,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 11; args=(11,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 4; args=(4,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 3; args=(3,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 8; args=(8,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 9; args=(9,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 24; args=(24,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 10; args=(10,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 7; args=(7,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 6; args=(6,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 40; args=(40,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 2; args=(2,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 20; args=(20,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 5; args=(5,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 17; args=(17,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 15; args=(15,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 22; args=(22,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 37; args=(37,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 25; args=(25,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 23; args=(23,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 14; args=(14,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 36; args=(36,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 13; args=(13,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 27; args=(27,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 32; args=(32,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 26; args=(26,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 33; args=(33,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 41; args=(41,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 34; args=(34,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 35; args=(35,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 28; args=(28,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 19; args=(19,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 16; args=(16,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 38; args=(38,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 39; args=(39,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 42; args=(42,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 12; args=(12,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 31; args=(31,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 18; args=(18,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 29; args=(29,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 30; args=(30,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 43; args=(43,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 21; args=(21,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 44; args=(44,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 45; args=(45,)
+(0.000) SELECT "guests_guest"."email" FROM "guests_guest" WHERE "guests_guest"."party_id" = 46; args=(46,)
+(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET / HTTP/1.1" 200 18354
+"GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 23739
+"GET /static/bootstrap-3.3.6-dist/css/bootstrap.min.css HTTP/1.1" 200 121260
+"GET /static/bigday/css/creative.css HTTP/1.1" 200 10114
+"GET /static/bigday/images/engagement-ring-hands.jpg HTTP/1.1" 200 2951286
+"GET /static/creative/js/jquery.easing.min.js HTTP/1.1" 200 5564
+"GET /static/creative/js/jquery.fittext.js HTTP/1.1" 200 1074
+"GET /static/bigday/js/footer.js HTTP/1.1" 200 396
+"GET /static/creative/js/creative.js HTTP/1.1" 200 1355
+"GET /static/bigday/images/maskers-barn.jpg HTTP/1.1" 200 82785
+"GET /static/bootstrap-3.3.6-dist/js/bootstrap.min.js HTTP/1.1" 200 36868
+"GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.3.0 HTTP/1.1" 200 56780
+"GET /static/bigday/images/header-image.jpg HTTP/1.1" 200 293762
+"GET /static/bigday/images/our-story.jpg HTTP/1.1" 200 5090475
+"GET /static/bigday/images/cali-beach.jpg HTTP/1.1" 200 4062827
+"GET /static/favicon.ico HTTP/1.1" 200 32038
+(0.004) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET / HTTP/1.1" 200 18354
+"GET /static/bootstrap-3.3.6-dist/css/bootstrap.min.css HTTP/1.1" 200 121260
+"GET /static/bigday/css/creative.css HTTP/1.1" 200 10114
+"GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 23739
+"GET /static/bigday/js/footer.js HTTP/1.1" 200 396
+"GET /static/bigday/images/engagement-ring-hands.jpg HTTP/1.1" 200 2951286
+"GET /static/creative/js/jquery.easing.min.js HTTP/1.1" 200 5564
+"GET /static/bootstrap-3.3.6-dist/js/bootstrap.min.js HTTP/1.1" 200 36868
+"GET /static/creative/js/jquery.fittext.js HTTP/1.1" 200 1074
+"GET /static/creative/js/creative.js HTTP/1.1" 200 1355
+"GET /static/bigday/images/maskers-barn.jpg HTTP/1.1" 200 82785
+"GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.3.0 HTTP/1.1" 200 56780
+"GET /static/bigday/images/header-image.jpg HTTP/1.1" 200 293762
+"GET /static/bigday/images/cali-beach.jpg HTTP/1.1" 200 4062827
+"GET /static/bigday/images/our-story.jpg HTTP/1.1" 200 5090475
+"GET /static/favicon.ico HTTP/1.1" 200 32038
+(0.004) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+Invalid HTTP_HOST header: '172.20.1.186:8000'. You may need to add u'172.20.1.186' to ALLOWED_HOSTS.
+"GET / HTTP/1.1" 400 59245
+Invalid HTTP_HOST header: '172.20.1.186:8000'. You may need to add u'172.20.1.186' to ALLOWED_HOSTS.
+"GET /favicon.ico HTTP/1.1" 400 59293
+code 400, message Bad request version ('\xcd\xb4\xd7\xe9_B\xef:(U\xf4\xa51\xba\x10<u\xdc\xcd\x11\x17\xf4F*\xdc\x08I\xac\x82hC?\x00"\xfa\xfa\x13\x01\x13\x02\x13\x03\xc0+\xc0/\xc0,\xc00\xcc\xa9\xcc\xa8\xc0\x13\xc0\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+
+code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01\xfc\x03\x03)5E\xd0\xf3)e\x92\xee y~l"\x16\x92N2\x02\xb7\x11.\xc6\xfa\x0bx\xc3t%6\xb4\x04 \x15B\x909L:1\x1e\xfe\xd9\x8c\xae\xf3\xf2\xda\x8c\xf5=wT`\xd8\xbca\x9a\xdf{\x95\xe7\xac\x0f?\x00"')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+
+code 400, message Bad request syntax ('\x16\x03\x01\x00\xcd\x01\x00\x00\xc9\x03\x03\x1d\x14\xb9\xc8H\xcc3\xd6\x8c2\xdc\xdd\x1f\x13\xd7\x82\x82Q\x13\xb4F&)56\xc68\xc6U%\xdc\xef\x00\x00\x1c')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+
+code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01\xfc\x03\x03\xd0\x7f]\x82\xe7\xd2\x93%\x9c\xe8\xe2\x03\xfbn8')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+
+code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01\xfc\x03\x03\x80\xc5\xd3\x15\xe3\xe9#\x8crz\x05\x8f\xe6U\xdc\x9e\xd5\x04m\x1aY\xa7\x13\xbe#{d\xde-\xfd\x05\x94 9\x18\r?p<\xe2*p[\xab6\x7f\x15\x1cER\x97?\xff+\xa0\xff\x08/\xb2\x9d\xae\xf9\x0beP\x00"\xda\xda\x13\x01\x13\x02\x13\x03\xc0+\xc0/\xc0,\xc00\xcc\xa9\xcc\xa8\xc0\x13\xc0\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+
+code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00\xcd\x01\x00\x00\xc9\x03\x03~')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+
