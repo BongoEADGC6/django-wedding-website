@@ -39,14 +39,12 @@ INSTALLED_APPS = [
     'guests',
 ]
 
-#MIDDLEWARE_CLASSES = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    #'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
@@ -112,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'America/New_York'
+TIME_ZONE = os.getenv('DJANGO_TZ', 'America/New_York')
 
 USE_I18N = True
 
@@ -132,9 +130,9 @@ STATICFILES_DIRS = (
 
 
 # the address your emails (save the dates/invites/etc.) will come from
-DEFAULT_WEDDING_FROM_EMAIL = 'Cliff and Melissa <mrmrshults@gmail.com>'
+DEFAULT_WEDDING_FROM_EMAIL = so.getenv('WEDDING_FROM', 'Cliff and Melissa <mrmrshults@gmail.com>')
 # the default reply-to of your emails
-DEFAULT_WEDDING_REPLY_EMAIL = 'Cliff and Melissa <mrmrshults@gmail.com>'
+DEFAULT_WEDDING_REPLY_EMAIL = so.getenv('WEDDING_REPLY', 'Cliff and Melissa <mrmrshults@gmail.com>')
 
 # when sending test emails it will use this address
 DEFAULT_WEDDING_TEST_EMAIL = DEFAULT_WEDDING_FROM_EMAIL
