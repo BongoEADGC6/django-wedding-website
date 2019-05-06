@@ -52,6 +52,6 @@ def create_qr_codes(output_file):
         </body>
         </html>
         """.format(table_text)
-    with open(output_file, "wr") as f:
+    with open(output_file, "w") as f:
             f.write(html_text)
 
