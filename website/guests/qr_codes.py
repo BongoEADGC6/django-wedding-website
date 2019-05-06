@@ -24,7 +24,7 @@ def create_qr_codes(output_file):
     table_data = str()
     for party in to_send_to:
         print(party.invitation_id)
-        rsvp_url = reverse('invitation', args=party.invitation_id)
+        rsvp_url = reverse('invitation', args=[party.invitation_id])
         print(rsvp_url)
         qr_img = gen_qr_code(rsvp_url)
         body_text = """
