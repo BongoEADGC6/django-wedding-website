@@ -28,7 +28,7 @@ def create_qr_codes(output_dir):
         qr_img = gen_qr_code(rsvp_url)
         qr_img_path = "{}/img/{}.png".format(output_dir, party.invitation_id)
         qr_img_static ="img/{}.png".format(party.invitation_id)
-        with open(qr_img_path, 'w') as image:
+        with open(qr_img_path, 'wb') as image:
             image.write(qr_img)
         body_text = """
             Please scan the code above with your smart phone or<br/>
