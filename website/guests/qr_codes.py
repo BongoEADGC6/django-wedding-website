@@ -25,6 +25,7 @@ def create_qr_codes(output_dir):
     for party in to_send_to:
         print("Creating QR for: {} - {}".format(party.name, party.invitation_id))
         rsvp_url = reverse('invitation', args=[party.invitation_id])
+        print("URL: {}".format(rsvp_url))
         qr_img = gen_qr_code(rsvp_url)
         qr_img_path = "{}/img/{}.png".format(output_dir, party.invitation_id)
         qr_img_static ="img/{}.png".format(party.invitation_id)
