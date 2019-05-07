@@ -21,12 +21,12 @@ BASE_URL = os.getenv('DJANGO_BASE_URL', 'localhost')
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'u7!-y4k1c6b44q234ngimfo*_rmfm3++cpzyn!$65w^!gum@h%'
+SECRET_KEY = os.getenv('DJANGO_SECRET', 'u7!-y4k1c6b44q234ngimfo*_rmfm3++cpzyn!$65w^!gum@h%')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv('DJANGO_DEBUG', True)
 
-ALLOWED_HOSTS = [BASE_URL]
+ALLOWED_HOSTS = os.getenv('DJANGO_ALLOWED_HOSTS', [BASE_URL])
 
 # Application definition
 
