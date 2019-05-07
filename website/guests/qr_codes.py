@@ -4,6 +4,7 @@ try:
 except ImportError:
     from io import StringIO
 from guests.models import Party, Guest
+from django.conf import settings
 from django.urls import reverse
 
 def gen_qr_code(url):
@@ -25,24 +26,26 @@ def create_qr_codes(output_dir):
     for party in to_send_to:
         print("Creating QR for: {} - {}".format(party.name, party.invitation_id))
         rsvp_url = reverse('invitation', args=[party.invitation_id])
+        rsvp_url = "https://{}{}".format(settings.BASE_URL, rsvp_url)
         print("URL: {}".format(rsvp_url))
         qr_img = gen_qr_code(rsvp_url)
         qr_img_path = "{}/img/{}.png".format(output_dir, party.invitation_id)
         qr_img_static ="img/{}.png".format(party.invitation_id)
         qr_img.save(qr_img_path)
         body_text = """
-            Please scan the code above with your smart phone or<br/>
-            navigate to the following link to submit your RSVP<br/>
+            Please scan the code above with your smart phone or<br>
+            navigate to the following link to submit your RSVP<br>
             {}
             """.format(rsvp_url)
         table_entry = """
               <tr>
+                <td class="tg-0lax"><img src="{}"></td>
               </tr>
               <tr>
                 <td class="tg-0lax"><img src="{}"></td>
                 <td class="tg-0lax">{}</td>
               </tr>
-            """.format(qr_img_static, body_text)
+            """.format(party.name, qr_img_static, body_text)
         table_data += "{}\n".format(table_entry)
     # Build full html page for printing
     table_text = """
