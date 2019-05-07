@@ -39,7 +39,10 @@ def create_qr_codes(output_dir):
             """.format(rsvp_url)
         table_entry = """
               <tr>
-                <td class="tg-0lax"><img src="{}"></td>
+                <td class="tg-0lax" colspan="2">************************</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax" colspan="2">{}</td>
               </tr>
               <tr>
                 <td class="tg-0lax"><img src="{}"></td>
