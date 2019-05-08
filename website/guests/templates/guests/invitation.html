@@ -40,12 +40,18 @@
             {% if not guest.is_child %}
             <div class="form-group">
                 {% with 'meal-'|add:guest.unique_id as meal_label %}
-                <label for="{{ meal_label }}" class="col-sm-3 control-label">... and will eat</label>
+                <label for="{{ meal_label }}" class="col-sm-3 control-label">will eat</label>
                 {% for meal_id, meal_name in meals %}
                 <label class="radio-inline">
                     <input type="radio" name="{{ meal_label }}" id="{{ meal_label }}-yes" value="{{ meal_id }}" {% if guest.meal == meal_id %}checked="checked"{% endif %} {% if guest.is_attending == False %}disabled{% endif %} required> {{ meal_name }}
                 </label>
                 {% endfor %}
+                {% endwith %}
+            </div>
+	    <div class="form-group">
+                {% with 'email-'|add:guest.unique_id as email_label %}
+		<label for="{{ email_label }}" class="col-sm-3 control-label">E-mail (Can be 'None')</label>
+		<input type="text" id="emailTxt" name="{{email_label}}" placeholder="example@gmail.com" {% if guest.email != None %}value="{{ guest.email }}" {% endif %} {% if guest.is_attending == False %}disabled{% endif %} required>
                 {% endwith %}
             </div>
             {% endif %}
@@ -76,12 +82,15 @@
             var value = target.attr('value');
             var mealButtonContainer = target.closest('.form-group').next('.form-group');
             var mealButtons = mealButtonContainer.find('[type=radio]');
+            var emailContainer = target.closest('.form-group').next('.form-group').next('.form-group');
+
             if (value === 'yes') {
-                mealButtonContainer.removeClass('text-muted');
+		mealButtonContainer.removeClass('text-muted');
                 mealButtons.each(function (index, button) {
                     button.disabled = false;
                     button.required = true;
                 });
+                emailContainer.removeClass('text-muted');
             } else if (value === "no") {
                 mealButtonContainer.addClass('text-muted');
                 mealButtons.each(function (index, button) {
@@ -89,6 +98,9 @@
                     button.disabled = true;
                     button.required = false;
                 });
+                emailContainer.addClass('text-muted');
+                emailContainer.find('input').removeAttr('required');
+		
             }
             // reload validation
             $(document.forms[0]).validator('destroy');
