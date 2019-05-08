@@ -34,6 +34,9 @@ class Party(models.Model):
     is_attending = models.NullBooleanField(default=None)
     comments = models.TextField(null=True, blank=True)
 
+    def __str__(self):
+        return 'Party: {}'.format(self.name)
+
     def __unicode__(self):
         return 'Party: {}'.format(self.name)
 
@@ -80,6 +83,9 @@ class Guest(models.Model):
         # convert to string so it can be used in the "add" templatetag
         return str(self.pk)
         #return unicode(self.pk)
+
+    def __str__(self):
+        return 'Guest: {} {}'.format(self.first_name, self.last_name)
 
     def __unicode__(self):
         return 'Guest: {} {}'.format(self.first_name, self.last_name)
