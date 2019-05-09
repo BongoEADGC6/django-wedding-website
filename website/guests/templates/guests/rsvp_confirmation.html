@@ -6,13 +6,13 @@
 {% block page_content %}
     <div class="layer"></div>
     <div class="container" id="main">
-        <h2>Hi {{ party.name }}! Thanks for your response!</h2>
+        <h2>Thanks for your response!</h2>
         {% if party.any_guests_attending %}
             <p>
                 We can't wait to celebrate with you in September!
             </p>
             <p>
-                Parking and accomodations
+                If any last minute questions or concerns, please reach out to us at <a href="mailto:{{ support_email }}">{{ support_email }}</a>.
             </p>
             <p>
                 If you've got a minute, you can help us out by filling in a <a href="https://forms.gle/JKv7meLZCNNu8Uto7">super quick survey</a> that will help us plan for the most fun and smooth event possible.
