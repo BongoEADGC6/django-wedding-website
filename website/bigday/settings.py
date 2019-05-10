@@ -24,7 +24,7 @@ BASE_URL = os.getenv('DJANGO_BASE_URL', 'localhost')
 SECRET_KEY = os.getenv('DJANGO_SECRET', 'u7!-y4k1c6b44q234ngimfo*_rmfm3++cpzyn!$65w^!gum@h%')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DJANGO_DEBUG', False)
+DEBUG = os.getenv('DJANGO_DEBUG', True)
 
 ALLOWED_HOSTS = os.getenv('DJANGO_ALLOWED_HOSTS', [BASE_URL])
 
@@ -123,10 +123,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
-STATIC_ROOT =  os.path.join(BASE_DIR, "bigday", "static")
+STATIC_ROOT =  'static_root'
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
-    #os.path.join('bigday', 'static'),
+    os.path.join('bigday', 'static'),
 )
 
 
