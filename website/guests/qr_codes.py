@@ -11,7 +11,7 @@ def gen_qr_code(url):
     qr = qrcode.QRCode(
             version=1,
             error_correction=qrcode.constants.ERROR_CORRECT_L,
-            box_size=8,
+            box_size=6,
             border=4,
             )
     qr.add_data(url)
@@ -45,6 +45,7 @@ def create_qr_codes(output_dir):
             Cliff & Melissa
             """.format(rsvp_url)
         table_entry = """
+            <div>
             <table class="tg">
               <tr>
                 <td class="tg-0lax" colspan="2">************************</td>
@@ -57,6 +58,7 @@ def create_qr_codes(output_dir):
                 <td class="tg-0lax">{}</td>
               </tr>
             </table>
+            </div>
             """.format(party.name, qr_img_static, body_text)
         table_data += "{}\n".format(table_entry)
     # Build full html page for printing
