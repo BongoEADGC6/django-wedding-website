@@ -11,7 +11,7 @@ def gen_qr_code(url):
     qr = qrcode.QRCode(
             version=1,
             error_correction=qrcode.constants.ERROR_CORRECT_L,
-            box_size=10,
+            box_size=6,
             border=4,
             )
     qr.add_data(url)
@@ -33,18 +33,19 @@ def create_qr_codes(output_dir):
         qr_img_static ="img/{}.png".format(party.invitation_id)
         qr_img.save(qr_img_path)
         body_text = """
-            If you have a smartphone or tablet please scan the code<br>
-            using your camera app or navigate to the following link <br>
-            to submit your RSVP<br>
-            {}<br>
+            If you have a smartphone or tablet please scan the code using your<br>
+            camera app (use Lens from the Google Assistant for Samsung devices)<br>
+            or navigate to the following link to submit your RSVP<br>
+            {} <br>
             <br>
-            If there are any issues, please feel free to contact us directly at<br>
-            Phone: 732-245-9653<br>
-            Email: mrmrshults@gmail.com<br>
-            Thank you!<br>
+            If there are any issues or questions, please feel free to contact us directly at<br>
+            Phone: 732-245-9653 <br>
+            Email: mrmrshults@gmail.com <br>
+            Thank you! <br>
             Cliff & Melissa
             """.format(rsvp_url)
         table_entry = """
+            <div>
             <table class="tg">
               <tr>
                 <td class="tg-0lax" colspan="2">************************</td>
@@ -57,6 +58,7 @@ def create_qr_codes(output_dir):
                 <td class="tg-0lax">{}</td>
               </tr>
             </table>
+            </div>
             """.format(party.name, qr_img_static, body_text)
         table_data += "{}\n".format(table_entry)
     # Build full html page for printing
