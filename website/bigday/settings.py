@@ -126,7 +126,8 @@ USE_TZ = True
 STATIC_ROOT =  'static_root'
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
-    os.path.join('bigday', 'static'),
+    #os.path.join('bigday', 'static'),
+    os.path.join('/code/', 'static'),
 )
 
 
