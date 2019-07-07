@@ -24,7 +24,7 @@
                         <a class="page-scroll" href="#main-header">Home</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#event">Maskers Barn</a>
+                        <a class="page-scroll" href="#event">The Lodge</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#other-stuff">Everything Else</a>
@@ -81,7 +81,7 @@
 	<script>
 	// Countdown timer script
 	// Set the date we're counting down to
-	var countDownDate = new Date("Sept 29, 2019 13:00:00").getTime();
+	var countDownDate = new Date("Sept 29, 2019 15:00:00").getTime();
 	// Update the count down every 1 second
 	var x = setInterval(function() {
 	    // Get todays date and time
@@ -124,12 +124,12 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#maskers" class="portfolio-box page-scroll">
-                        <img src="{% static 'bigday/images/maskers-barn.jpg' %}" class="img-responsive" alt="">
+                    <a href="#lodge" class="portfolio-box page-scroll">
+                        <img src="{% static 'bigday/images/lodge.jpg' %}" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-name">
-                                    Masker's Barn
+                                    The Lodge
                                 </div>
                             </div>
                         </div>
@@ -151,8 +151,8 @@
         </div>
     </section>
     {% include 'partials/event.html' %}
-    <section id="maskers">
-        {% include 'partials/maskers.html' %}
+    <section id="lodge">
+        {% include 'partials/lodge.html' %}
     </section>
     {% comment %}
         {% include 'partials/wedding-party.html' %}
