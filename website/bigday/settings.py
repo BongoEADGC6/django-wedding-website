@@ -26,7 +26,7 @@ SECRET_KEY = os.getenv('DJANGO_SECRET', 'u7!-y4k1c6b44q234ngimfo*_rmfm3++cpzyn!$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DJANGO_DEBUG', True)
 
-ALLOWED_HOSTS = os.getenv('DJANGO_ALLOWED_HOSTS', [BASE_URL])
+ALLOWED_HOSTS = [os.getenv('DJANGO_ALLOWED_HOSTS', BASE_URL)]
 
 # Application definition
 
@@ -126,7 +126,8 @@ USE_TZ = True
 STATIC_ROOT =  'static_root'
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
-    os.path.join('bigday', 'static'),
+    #os.path.join('bigday', 'static'),
+    os.path.join('/code/', 'static'),
 )
 
 

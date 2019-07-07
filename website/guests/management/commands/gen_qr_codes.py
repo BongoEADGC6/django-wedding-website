@@ -13,4 +13,5 @@ class Command(BaseCommand):
 
     def handle(self, *args, **kwargs):
         filename = kwargs['filename']
+        print ("Generating QR Codes")
         qr_codes.create_qr_codes(filename)
