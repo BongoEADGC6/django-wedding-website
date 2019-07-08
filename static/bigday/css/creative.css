@@ -91,10 +91,7 @@ aside {
     -moz-transition: all .35s;
     transition: all .35s;
   	text-shadow:
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		1px 1px 0 #000;
+		1px 1px #FFFFFF;
 }
 
 .navbar-default .navbar-header .navbar-brand {
